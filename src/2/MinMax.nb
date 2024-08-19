@@ -1,0 +1,674 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     25498,        666]
+NotebookOptionsPosition[     24607,        643]
+NotebookOutlinePosition[     25004,        659]
+CellTagsIndexPosition[     24961,        656]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Random Questions #2", "Title",
+ CellChangeTimes->{{3.933002824150041*^9, 
+  3.9330028282359*^9}},ExpressionUUID->"dd1bfebc-63f4-448f-bda3-3a35ab39e2f7"],
+
+Cell[TextData[{
+ "Question from mmathemagics on Instagram, linked here:\n\
+https://www.instagram.com/p/C-F2-uLNiny/?igsh=bzY0bnNsOHo5eWtn\n\nLet ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["k", "TI"], "\[Element]", 
+         StyleBox["R", FontSlant -> "Plain"]}], TraditionalForm], 
+     "errors" -> {}, "input" -> "k\\in\\mathbb{R}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "24a6e9c9-7292-46ed-ae81-6d2f9281d1eb"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["M", "TI"], 
+         RowBox[{"(", 
+           StyleBox["k", "TI"], ")"}], ":", "\[LongEqual]", 
+         UnderscriptBox["max", 
+          RowBox[{
+            StyleBox["x", "TI"], "\[Element]", 
+            RowBox[{"[", 
+              RowBox[{"-1", ",", "1"}], "]"}]}], LimitsPositioning -> True], 
+         RowBox[{"{", 
+           RowBox[{"|4", 
+             SuperscriptBox[
+              StyleBox["x", "TI"], "2"], "-", "4", 
+             StyleBox["x", "TI"], "+", 
+             StyleBox["k", "TI"], "|"}], "}"}]}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "M(k):= \\max_{x\\in[-1,1]} \\{|4x^2-4x+k|\\}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "e9ea9535-77c1-4874-8afc-11013a81ff2e"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         UnderscriptBox["min", 
+          RowBox[{
+            StyleBox["k", "TI"], "\[Element]", 
+            StyleBox["R", FontSlant -> "Plain"]}], LimitsPositioning -> True], 
+         StyleBox["M", "TI"], 
+         RowBox[{"(", 
+           StyleBox["k", "TI"], ")"}], "\[LongEqual]", "?"}], 
+       TraditionalForm], "errors" -> {}, "input" -> 
+     "\\min_{k\\in\\mathbb{R}} M(k) = ?", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "e9161d1f-f717-4744-88d7-6d0b89f34ff4"],
+ "\nWe know that ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"\[ForAll]", 
+         StyleBox["k", "TI"], "\[Element]", 
+         StyleBox["R", FontSlant -> "Plain"]}], TraditionalForm], 
+     "errors" -> {}, "input" -> "\\forall k\\in\\mathbb{R}", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "9c50fa6b-b543-4012-8383-a9e1187b80b1"],
+ " that ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["f", "TI"], 
+         RowBox[{"(", 
+           StyleBox["x", "TI"], ")"}], "\[LongEqual]", "4", 
+         SuperscriptBox[
+          StyleBox["x", "TI"], "2"], "-", "4", 
+         StyleBox["x", "TI"], "+", 
+         StyleBox["k", "TI"]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "f(x)=4x^2-4x+k", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "93ffe005-696f-414a-ab46-51b3342dca09"],
+ " is continuous on the interval ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[Element]", 
+         RowBox[{"[", 
+           RowBox[{"-1", ",", "1"}], "]"}]}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x\\in[-1,1]", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "6045a930-e1ab-4e20-80f3-0dc544e9bc6c"],
+ ", so by the Extreme Value Theorem we know that ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"\[Exists]", 
+         StyleBox["a", "TI"], ",", 
+         StyleBox["b", "TI"], "\[Element]", 
+         RowBox[{"[", 
+           RowBox[{"-1", ",", "1"}], "]"}]}], TraditionalForm], 
+     "errors" -> {}, "input" -> "\\exists a, b \\in [-1, 1]", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "3be235a0-9a1b-4d09-b0de-dd1efc540cef"],
+ " such that ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["f", "TI"], 
+         RowBox[{"(", 
+           StyleBox["a", "TI"], ")"}], "\[LessEqual]", 
+         StyleBox["f", "TI"], 
+         RowBox[{"(", 
+           StyleBox["x", "TI"], ")"}], "\[LessEqual]", 
+         StyleBox["f", "TI"], 
+         RowBox[{"(", 
+           StyleBox["b", "TI"], ")"}], "\[ForAll]", 
+         StyleBox["x", "TI"], "\[Element]", 
+         RowBox[{"[", 
+           RowBox[{"-1", ",", "1"}], "]"}]}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "f(a)\\leq f(x)\\leq f(b) \\forall x\\in [-1,1]", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "1c06a8bb-589b-47a0-ba90-807441a40322"],
+ ". \n\nWe can use the first derivative test:\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["f", "TI"], 
+         RowBox[{"(", 
+           RowBox[{
+             StyleBox["x", "TI"], ",", 
+             StyleBox["k", "TI"]}], ")"}], "\[LongEqual]", "|4", 
+         SuperscriptBox[
+          StyleBox["x", "TI"], "2"], "-", "4", 
+         StyleBox["x", "TI"], "+", 
+         StyleBox["k", "TI"], "|"}], TraditionalForm], "errors" -> {}, 
+     "input" -> "f(x,k) = |4x^2-4x+k|", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "7338d649-8080-4eaf-9094-6365ef8a80c5"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         FractionBox[
+          RowBox[{"\[PartialD]", 
+            StyleBox["f", "TI"]}], 
+          RowBox[{"\[PartialD]", 
+            StyleBox["x", "TI"]}]], "\[LongEqual]", 
+         FractionBox[
+          RowBox[{"4", 
+            SuperscriptBox[
+             StyleBox["x", "TI"], "2"], "-", "4", 
+            StyleBox["x", "TI"], "+", 
+            StyleBox["k", "TI"]}], 
+          RowBox[{"|4", 
+            SuperscriptBox[
+             StyleBox["x", "TI"], "2"], "-", "4", 
+            StyleBox["x", "TI"], "+", 
+            StyleBox["k", "TI"], "|"}]], 
+         RowBox[{"(", 
+           RowBox[{"8", 
+             StyleBox["x", "TI"], "-", "4"}], ")"}], "\[LongEqual]", "0"}], 
+       TraditionalForm], "errors" -> {}, "input" -> 
+     "\\frac{\\partial f}{\\partial x} = \\frac{4x^2-4x+k}{|4x^2-4x+k|} \
+(8x-4) = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "183dc441-9fd6-4ce3-b9e6-5bf0d40713fd"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"\[DoubleRightArrow]", 
+         RowBox[{"(", 
+           RowBox[{"4", 
+             SuperscriptBox[
+              StyleBox["x", "TI"], "2"], "-", "4", 
+             StyleBox["x", "TI"], "+", 
+             StyleBox["k", "TI"]}], ")"}], 
+         RowBox[{"(", 
+           RowBox[{"8", 
+             StyleBox["x", "TI"], "-", "4"}], ")"}], "\[LongEqual]", "0"}], 
+       TraditionalForm], "errors" -> {}, "input" -> 
+     "\\Rightarrow (4x^2-4x+k)(8x-4)=0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "556b7270-47a5-4dfe-9471-925655809c16"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"\[DoubleRightArrow]", "4", 
+         SuperscriptBox[
+          StyleBox["x", "TI"], "2"], "-", "4", 
+         StyleBox["x", "TI"], "+", 
+         StyleBox["k", "TI"], "\[LongEqual]", "0", " or ", "8", 
+         StyleBox["x", "TI"], "-", "4", "\[LongEqual]", "0"}], 
+       TraditionalForm], "errors" -> {}, "input" -> 
+     "\\Rightarrow 4x^2-4x+k = 0\\mbox{ or } 8x-4=0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "903e2752-2f5f-4c8b-94ad-91568f8bc61d"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"\[DoubleRightArrow]", 
+         StyleBox["x", "TI"], "\[LongEqual]", 
+         FractionBox["1", "2"], 
+         RowBox[{"(", 
+           RowBox[{"1", "\[PlusMinus]", 
+             SqrtBox[
+              RowBox[{"1", "-", 
+                StyleBox["k", "TI"]}]]}], ")"}], " or ", 
+         StyleBox["x", "TI"], "\[LongEqual]", 
+         FractionBox["1", "2"]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "\\Rightarrow x=\\frac{1}{2}(1\\pm \\sqrt{1-k})\\mbox{ or } \
+x=\\frac{1}{2}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "3e903bb1-e50b-4da2-8a32-1fe33e36393b"],
+ "\n\nSo, we know by the Extreme Value Theorem, that the maximum value of ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["f", "TI"], "(", 
+         StyleBox["x", "TI"], ")"}], TraditionalForm], "errors" -> {}, 
+     "input" -> "f(x)", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "232f491b-d09b-452d-8e67-1c74d8b24c61"],
+ " for some k is at ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "-1"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x=-1", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "40bc72f3-e6d4-45c9-8ba7-94e42208c2e5"],
+ " or ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "1"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x=1", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "a93b0e79-1c4d-458e-919e-eedee170ba6d"],
+ " or ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", 
+         FractionBox["1", "2"]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "x=\\frac{1}{2}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "f41ad389-7fc8-4354-95bc-a02681692899"],
+ " or ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", 
+         FractionBox["1", "2"], 
+         RowBox[{"(", 
+           RowBox[{"1", "\[PlusMinus]", 
+             SqrtBox[
+              RowBox[{"1", "-", 
+                StyleBox["k", "TI"]}]]}], ")"}]}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x=\\frac{1}{2}(1\\pm \\sqrt{1-k})", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "ea8a3b0c-7601-4b87-a1d2-5081c1de32e3"],
+ ".\n\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["f", "TI"], 
+         RowBox[{"(", 
+           RowBox[{"-1", ",", 
+             StyleBox["k", "TI"]}], ")"}], "\[LongEqual]", "|4", 
+         SuperscriptBox[
+          RowBox[{"(", "-1", ")"}], "2"], "-", "4", 
+         RowBox[{"(", "-1", ")"}], "+", 
+         StyleBox["k", "TI"], "|", "\[LongEqual]", "|8", "+", 
+         StyleBox["k", "TI"], "|"}], TraditionalForm], "errors" -> {}, 
+     "input" -> "f(-1, k) = |4(-1)^2-4(-1)+k |= |8+k|", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "79285f72-0b9c-4891-a7c6-d01d5f371deb"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["f", "TI"], 
+         RowBox[{"(", 
+           RowBox[{
+             FractionBox["1", "2"], ",", 
+             StyleBox["k", "TI"]}], ")"}], "\[LongEqual]", "|4", 
+         SuperscriptBox[
+          RowBox[{"(", 
+            FractionBox["1", "2"], ")"}], "2"], "-", "4", 
+         RowBox[{"(", 
+           FractionBox["1", "2"], ")"}], "+", 
+         StyleBox["k", "TI"], "|", "\[LongEqual]", "|", "-", "1", "+", 
+         StyleBox["k", "TI"], "|"}], TraditionalForm], "errors" -> {}, 
+     "input" -> 
+     "f(\\frac{1}{2}, k) = |4(\\frac{1}{2})^2-4(\\frac{1}{2})+k| = |-1+k|", 
+     "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "41dcd993-1b6b-421d-8b27-af4091b1339d"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["f", "TI"], 
+         RowBox[{"(", 
+           RowBox[{"1", ",", 
+             StyleBox["k", "TI"]}], ")"}], "\[LongEqual]", "|4", 
+         SuperscriptBox[
+          RowBox[{"(", "1", ")"}], "2"], "-", "4", 
+         RowBox[{"(", "1", ")"}], "+", 
+         StyleBox["k", "TI"], "|", "\[LongEqual]", "|", 
+         StyleBox["k", "TI"], "|"}], TraditionalForm], "errors" -> {}, 
+     "input" -> "f(1, k) = |4(1)^2-4(1)+k |= |k|", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "1e1d5988-bd44-4355-b26f-a3df82669272"],
+ "\n\nThe other two options we will use Mathematica to help us evaluate. "
+}], "Text",
+ CellChangeTimes->{{3.933002851495028*^9, 3.933002857078446*^9}, {
+  3.933006548783791*^9, 3.933006549065612*^9}, {3.9330066392212143`*^9, 
+  3.933006678928835*^9}, {3.933006715828623*^9, 3.9330067183487473`*^9}, {
+  3.933006894838682*^9, 3.933006992355485*^9}, {3.933007028819118*^9, 
+  3.9330070768112507`*^9}, {3.933007214841011*^9, 3.933007314135244*^9}, {
+  3.933007361925755*^9, 3.9330074458085423`*^9}, {3.933007550186252*^9, 
+  3.93300756835889*^9}, {3.933007642652337*^9, 3.933007644255435*^9}, {
+  3.933007683060049*^9, 3.9330077188334227`*^9}, {3.933007752662198*^9, 
+  3.9330077643795652`*^9}, {3.933008289312454*^9, 
+  3.933008295544468*^9}},ExpressionUUID->"6054945f-9743-402e-ac6e-\
+085e18f9e4b9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", "x_", "]"}], ":=", 
+   RowBox[{"Abs", "[", 
+    RowBox[{
+     RowBox[{"4", 
+      SuperscriptBox["x", "2"]}], "-", 
+     RowBox[{"4", "x"}], "+", "k"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"FullSimplify", "[", 
+  RowBox[{"f", "[", 
+   RowBox[{
+    FractionBox["1", "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{"1", " ", "+", " ", 
+      RowBox[{"Sqrt", "[", 
+       RowBox[{"1", "-", "k"}], "]"}]}], ")"}]}], "]"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"FullSimplify", "[", 
+  RowBox[{"f", "[", 
+   RowBox[{
+    FractionBox["1", "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{"1", " ", "-", " ", 
+      RowBox[{"Sqrt", "[", 
+       RowBox[{"1", "-", "k"}], "]"}]}], ")"}]}], "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.933007771246273*^9, 3.933007818883519*^9}, {
+  3.9330079043291683`*^9, 3.933007913790853*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"8dc8d85a-06ed-4b39-8eee-f940df605a96"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{{3.9330078045629807`*^9, 3.9330078196015587`*^9}, 
+   3.933007914236127*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"1de195c3-f0d1-491b-b57a-8c03251bd818"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{{3.9330078045629807`*^9, 3.9330078196015587`*^9}, 
+   3.933007914239209*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"6e51226c-d381-41da-bc13-6433996617f9"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Both of these points end up with the function being equal to 0. Therefore \
+we can also elect to ignore that sometimes those two points are extraneous, \
+and do not fall in ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[Element]", 
+         RowBox[{"[", 
+           RowBox[{"-1", ",", "1"}], "]"}]}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x\\in [-1,1]", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "1c039b22-f37f-4c01-abfd-11d9dfe7c3e6"],
+ ". We can ignore these since the function value must have an global maximum \
+greater than 0 due to the absolute value, as seen by the three values above. \
+Even if ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["k", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "k=0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "0a38b957-a968-4c9f-835a-b8975877323f"],
+ ", then the maximum is ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"|8", "+", 
+         StyleBox["k", "TI"], "|", "\[LongEqual]", "8"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "|8+k|=8", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "7bfc8cbf-da3e-4bd9-b529-df7875954b29"],
+ ". \n\nNow, ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"|8", "+", 
+         StyleBox["k", "TI"], "|", "\[LongEqual]", "|", "-", "1", "+", 
+         StyleBox["k", "TI"], "|"}], TraditionalForm], "errors" -> {}, 
+     "input" -> "|8+k|=|-1+k|", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "fb23d741-a765-405b-a80f-b0c4b00b5ffb"],
+ " when ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["k", "TI"], "\[LongEqual]", "-3.5"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "k=-3.5", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "a63a9590-805f-448e-9a10-2350ed929e43"],
+ ". When ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["k", "TI"], ">", "-3.5"}], TraditionalForm], "errors" -> {},
+      "input" -> "k>-3.5", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "a12ba278-bc7d-4e47-a0a3-8bd8c6ceb761"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"|8", "+", 
+         StyleBox["k", "TI"], "|"}], TraditionalForm], "errors" -> {}, 
+     "input" -> "|8+k|", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "470d3d96-3a6a-46bf-aa3e-ff501044a519"],
+ "yields the largest value, while ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       TemplateBox[{
+         RowBox[{"-", "1", "+", 
+           StyleBox["k", "TI"]}]}, "Abs"], TraditionalForm], "errors" -> {}, 
+     "input" -> "|-1+k|", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "863b1931-d0de-4cb8-918c-2716fe182b6e"],
+ " yields the largest value for ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["k", "TI"], "<", "-3.5"}], TraditionalForm], "errors" -> {},
+      "input" -> "k<-3.5", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "600a03b1-5703-424c-ad1e-f8c18d3c3592"],
+ ". The value ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       TemplateBox[{
+         RowBox[{
+           StyleBox["k", "TI"]}]}, "Abs"], TraditionalForm], "errors" -> {}, 
+     "input" -> "|k|", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "4cfde50f-cf5f-45ce-8027-545f0868f959"],
+ " will never yield the largest value as ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"\[ForAll]", 
+         StyleBox["k", "TI"], "\[Element]", 
+         StyleBox["R", FontSlant -> "Plain"]}], TraditionalForm], 
+     "errors" -> {}, "input" -> "\\forall k \\in \\mathbb{R}", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "78a8404e-bfad-4cf0-9cf5-dd43110ab423"],
+ " one of the other two values must yield a larger value. \n\nTherefore, we \
+can define ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["M", "TI"], "(", 
+         StyleBox["k", "TI"], ")"}], TraditionalForm], "errors" -> {}, 
+     "input" -> "M(k)", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "22c0f422-a9d9-4493-8f5d-2399556d16e9"],
+ " piecewise as follows:\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["M", "TI"], 
+         RowBox[{"(", 
+           StyleBox["k", "TI"], ")"}], "\[LongEqual]", "|", "-", "1", "+", 
+         StyleBox["k", "TI"], "|", ",", 
+         StyleBox["k", "TI"], "\[LessEqual]", "-3.5"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "M(k) = |-1+k|, k\\leq -3.5", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "6c8003e1-1f59-444b-98b2-080cd769976d"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["M", "TI"], 
+         RowBox[{"(", 
+           StyleBox["k", "TI"], ")"}], "\[LongEqual]", "|8", "+", 
+         StyleBox["k", "TI"], "|", ",", 
+         StyleBox["k", "TI"], ">", "-3.5"}], TraditionalForm], "errors" -> {},
+      "input" -> "M(k) = |8+k|, k>-3.5", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "a34cf6ae-42e1-4e1d-bedd-e9bd7af7e66e"],
+ "\n\nAs k decreases from -3.5, ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["M", "TI"], "(", 
+         StyleBox["k", "TI"], ")"}], TraditionalForm], "errors" -> {}, 
+     "input" -> "M(k)", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "6ac7052e-83ab-44d4-a4c1-8fe71f7caf13"],
+ " increases, and likewise as k increases from -3.5, ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["M", "TI"], "(", 
+         StyleBox["k", "TI"], ")"}], TraditionalForm], "errors" -> {}, 
+     "input" -> "M(k)", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "5ea6971a-4c07-418f-916e-36b620e563f3"],
+ " increases. Therefore, the minimum for ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["M", "TI"], "(", 
+         StyleBox["k", "TI"], ")"}], TraditionalForm], "errors" -> {}, 
+     "input" -> "M(k)", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "886f94ee-c0c4-4379-8bf6-c29df27ee3f2"],
+ " must be exactly at ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["k", "TI"], "\[LongEqual]", "-3.5"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "k=-3.5", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "4ae8fcef-bd6a-4b88-9a62-d18376e4bf99"],
+ ". \n\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"\[Therefore]", 
+         UnderscriptBox["min", 
+          RowBox[{
+            StyleBox["k", "TI"], "\[Element]", 
+            StyleBox["R", FontSlant -> "Plain"]}], LimitsPositioning -> True], 
+         StyleBox["M", "TI"], 
+         RowBox[{"(", 
+           StyleBox["k", "TI"], ")"}], "\[LongEqual]", "|", "-", "1", "-", 
+         "3.5|"}], TraditionalForm], "errors" -> {}, "input" -> 
+     "\\therefore \\min_{k\\in\\mathbb{R}} M(k) = |-1-3.5 |", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "2af11e40-2dac-498f-af96-df45b7da3133"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"\[DoubleRightArrow]", 
+         UnderscriptBox["min", 
+          RowBox[{
+            StyleBox["k", "TI"], "\[Element]", 
+            StyleBox["R", FontSlant -> "Plain"]}], LimitsPositioning -> True], 
+         StyleBox["M", "TI"], 
+         RowBox[{"(", 
+           StyleBox["k", "TI"], ")"}], "\[LongEqual]", "4.5", " when ", 
+         StyleBox["k", "TI"], "\[LongEqual]", "-3.5"}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "\\Rightarrow \\min_{k \\in \\mathbb{R}} M(k) = 4.5\\mbox{ when } \
+k=-3.5", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "1df25a12-c5ce-48a0-b6b0-807a70229e57"]
+}], "Text",
+ CellChangeTimes->{{3.93300792895457*^9, 3.933008039317914*^9}, {
+  3.933008146652523*^9, 3.9330081679647083`*^9}, {3.93300826146271*^9, 
+  3.933008425578693*^9}, {3.933008481625997*^9, 3.933008483489768*^9}, {
+  3.933084798452017*^9, 3.9330848864508457`*^9}, {3.933084916737503*^9, 
+  3.9330849421404457`*^9}},ExpressionUUID->"d8921136-ad22-4ecc-b4aa-\
+23620b5d700f"]
+}, Open  ]]
+},
+WindowSize->{808, 747},
+WindowMargins->{{Automatic, 271}, {Automatic, 23}},
+FrontEndVersion->"13.2 for Mac OS X x86 (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"b8b96f5e-94ea-407f-92a3-eb0662f1b41a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 158, 2, 98, "Title",ExpressionUUID->"dd1bfebc-63f4-448f-bda3-3a35ab39e2f7"],
+Cell[741, 26, 13296, 340, 603, "Text",ExpressionUUID->"6054945f-9743-402e-ac6e-085e18f9e4b9"],
+Cell[CellGroupData[{
+Cell[14062, 370, 964, 28, 112, "Input",ExpressionUUID->"8dc8d85a-06ed-4b39-8eee-f940df605a96"],
+Cell[15029, 400, 202, 3, 34, "Output",ExpressionUUID->"1de195c3-f0d1-491b-b57a-8c03251bd818"],
+Cell[15234, 405, 203, 3, 34, "Output",ExpressionUUID->"6e51226c-d381-41da-bc13-6433996617f9"]
+}, Open  ]],
+Cell[15452, 411, 9139, 229, 454, "Text",ExpressionUUID->"d8921136-ad22-4ecc-b4aa-23620b5d700f"]
+}, Open  ]]
+}
+]
+*)
+
