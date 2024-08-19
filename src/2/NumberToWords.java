@@ -1,5 +1,5 @@
 /*
-Random Questions #3:
+Random Questions #2:
 Convert a given integer N int words (i.e. 22 -> "Twenty Two")
 Inspired by an Instagram post and a GeeksForGeeks Page (https://www.geeksforgeeks.org/convert-number-to-words/)
 
